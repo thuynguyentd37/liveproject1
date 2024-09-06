@@ -1,0 +1,13 @@
+pageObjects\ShopContentPanel.class
+pageObjects\OrderFormPayment.class
+uk\co\automationtesting\liveproject1\App.class
+base\Hooks.class
+pageObjects\ShoppingCart.class
+pageObjects\OrderFormDelivery.class
+pageObjects\OrderFormShippingMethod.class
+pageObjects\OrderFormPersInfo.class
+base\BasePage.class
+pageObjects\ShopProductPage.class
+pageObjects\ShopHomepage.class
+base\WebDriverInstance.class
+pageObjects\Homepage.class
