@@ -1,5 +1,6 @@
 package base;
 
+import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -29,8 +30,10 @@ public class ExtentManager extends BasePage {
 	
 	public static ExtentReports setupExtentReport(String testName) {
 		extentReport = new ExtentReports();
-		ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir") + "/report/" +
-		extentReportsPrefix_Name(testName) + ".html");
+		ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir")
+				+ File.separator + "report"
+				+ File.separator + extentReportsPrefix_Name(testName)
+				+ ".html");
 		extentReport.attachReporter(spark);
 		
 		extentReport.setSystemInfo("Tester", "John Smith");

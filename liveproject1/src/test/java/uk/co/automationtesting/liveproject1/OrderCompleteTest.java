@@ -59,7 +59,7 @@ public class OrderCompleteTest extends Hooks {
 
 		// creating an object of the cart content panel (once an item was added)
 		ShopContentPanel cPanel = new ShopContentPanel();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		cPanel.getCheckoutBtn().click();
 
 		// creating an object of the shopping cart page (all items selected)
