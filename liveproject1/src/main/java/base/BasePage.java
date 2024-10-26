@@ -28,7 +28,12 @@ public class BasePage {
 		prop = new Properties();
 		// Load properties from config file
 		FileInputStream data = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\main\\java\\resources\\config.properties");
+				System.getProperty("user.dir")
+						+ File.separator + "src"
+						+ File.separator + "main"
+						+ File.separator + "java"
+						+ File.separator + "resources"
+						+ File.separator + "config.properties");
 		prop.load(data);
 	}
 
@@ -48,8 +53,11 @@ public class BasePage {
 	public static String takeSnapShot(String name) throws IOException {
 		File srcFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
 
-		String destFile = System.getProperty("user.dir") + "\\target\\screenshots\\" + timestamp() + ".png";
-		screenShotDestinationPath = destFile;
+		String destFile = System.getProperty("user.dir")
+				+ File.separator + "target"
+				+ File.separator + "screenshots"
+				+ File.separator + timestamp() + ".png";
+        screenShotDestinationPath = destFile;
 		
 		try {
 			FileUtils.copyFile(srcFile, new File(destFile));
@@ -70,8 +78,13 @@ public class BasePage {
 		return screenShotDestinationPath;
 	}
 	
-	public static void waitForElementInvisble(WebElement element, int timer) throws IOException {
+	public static void waitForElementInvisible(WebElement element, int timer) throws IOException {
 		WebDriverWait wait = new WebDriverWait(getDriver(), timer);
 		wait.until(ExpectedConditions.invisibilityOf(element));
+	}
+
+	public static void waitForElementToBeClickable(WebElement element, int timer) throws IOException {
+		WebDriverWait wait = new WebDriverWait(getDriver(), timer);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 }

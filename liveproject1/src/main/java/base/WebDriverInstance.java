@@ -1,6 +1,7 @@
 package base;
 
 // Import necessary libraries
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -36,7 +37,7 @@ public class WebDriverInstance {
 		// If Maven property is not set, load from properties file
 		if (browser == null || browser.isEmpty()) {
 			Properties prop = new Properties();
-			FileInputStream input = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\resources\\config.properties");
+			FileInputStream input = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/resources/config.properties");
 			prop.load(input);
 			browser = prop.getProperty("browser", "chrome"); // Default to Chrome if not set
 		}
@@ -47,7 +48,12 @@ public class WebDriverInstance {
 		switch (browser.toLowerCase()) {
 		case "chrome":
 			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "\\src\\main\\java\\drivers\\chromedriver.exe");
+					System.getProperty("user.dir")
+							+ File.separator + "src"
+							+ File.separator + "main"
+							+ File.separator + "java"
+							+ File.separator + "drivers"
+							+ File.separator + "chromedriver");
 			ChromeOptions chromeOptions = new ChromeOptions();
 			if (Boolean.parseBoolean(headless)) {
 				chromeOptions.addArguments("--headless"); // Enable headless mode
@@ -59,7 +65,12 @@ public class WebDriverInstance {
 
 		case "firefox":
 			System.setProperty("webdriver.gecko.driver",
-					System.getProperty("user.dir") + "\\src\\main\\java\\drivers\\geckodriver.exe");
+					System.getProperty("user.dir")
+							+ File.separator + "src"
+							+ File.separator + "main"
+							+ File.separator + "java"
+							+ File.separator + "drivers"
+							+ File.separator + "geckodriver.exe");
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
 			if (Boolean.parseBoolean(headless)) {
 				firefoxOptions.addArguments("-headless"); // Enable headless mode

@@ -3,6 +3,7 @@ package uk.co.automationtesting.liveproject1;
 import java.io.IOException;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
@@ -15,7 +16,6 @@ import pageObjects.ShopContentPanel;
 import pageObjects.ShopHomepage;
 import pageObjects.ShopProductPage;
 import pageObjects.ShoppingCart;
-import resources.Retry;
 
 @Listeners(resources.Listeners.class)
 @Test(groups= {"regression"})
@@ -65,15 +65,19 @@ public class AddRemoveItemBasketTest extends Hooks {
 		shopProd.getHomepageLink().click();
 		shopHome.getProdTwo().click();
 		shopProd.getAddToCartBtn().click();
-		Thread.sleep(1000);
-		cPanel.getCheckoutBtn().click();
+		//SeleniumHelper helper = new SeleniumHelper();
+		//helper.clickElementByXPath("//*[text()='Proceed to checkout']");
+		Thread.sleep(3000);
+		WebElement checkoutBtn = cPanel.getCheckoutBtn();
+		waitForElementToBeClickable(checkoutBtn,5);
+		checkoutBtn.click();
 
 		// creating an object for the shopping cart page and deleting item 2
 		ShoppingCart cart = new ShoppingCart();
 		cart.getDeleteItemTwo().click();
 
 		// using a wait to ensure the deletion has taken place
-		waitForElementInvisble(cart.getDeleteItemTwo(), 10);
+		waitForElementInvisible(cart.getDeleteItemTwo(), 10);
 
 		// printing the total amount to console
 		System.out.println(cart.getTotalAmount().getText());
