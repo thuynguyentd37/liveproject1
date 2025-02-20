@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
 
@@ -14,7 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import drivers.DriverFactory;
 
 public class BasePage {
 
@@ -39,7 +40,8 @@ public class BasePage {
 
 	// Method to get WebDriver instance
 	public static WebDriver getDriver() throws IOException {
-		return WebDriverInstance.getDriver();
+		//return WebDriverInstance.getDriver();
+		return DriverFactory.getDriver();
 	}
 
 	// Method to get URL from properties file
@@ -79,12 +81,12 @@ public class BasePage {
 	}
 	
 	public static void waitForElementInvisible(WebElement element, int timer) throws IOException {
-		WebDriverWait wait = new WebDriverWait(getDriver(), timer);
+		WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(timer));
 		wait.until(ExpectedConditions.invisibilityOf(element));
 	}
 
 	public static void waitForElementToBeClickable(WebElement element, int timer) throws IOException {
-		WebDriverWait wait = new WebDriverWait(getDriver(), timer);
+		WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(timer));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 }

@@ -60,8 +60,9 @@ public class AddRemoveItemBasketTest extends Hooks {
 
 		// creating an object of the cart content panel (once an item was added)
 		ShopContentPanel cPanel = new ShopContentPanel();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		cPanel.getContinueShopBtn().click();
+		Thread.sleep(2000);
 		shopProd.getHomepageLink().click();
 		shopHome.getProdTwo().click();
 		shopProd.getAddToCartBtn().click();
