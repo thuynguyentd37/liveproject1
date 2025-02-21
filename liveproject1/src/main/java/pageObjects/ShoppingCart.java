@@ -3,13 +3,11 @@ package pageObjects;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import base.BasePage;
+import utils.DriverFactory;
 
 public class ShoppingCart extends BasePage{
-	public WebDriver driver;
 	
 	By havePromo = By.linkText("Have a promo code?");
 	By promoTextbox = By.cssSelector("input[name='discount_name']");
@@ -24,38 +22,31 @@ public class ShoppingCart extends BasePage{
 	}
 	
 	public WebElement getHavePromo() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(havePromo);
+		return DriverFactory.getDriver().findElement(havePromo);
 	}
 	
 	public WebElement getPromoTextbox() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(promoTextbox);
+		return DriverFactory.getDriver().findElement(promoTextbox);
 	}
 	
 	public WebElement getPromoAddBtn() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(promoAddBtn);
+		return DriverFactory.getDriver().findElement(promoAddBtn);
 	}
 	
 	public WebElement getProceedCheckoutBtn() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(proceedToCheckoutBtn);
+		return DriverFactory.getDriver().findElement(proceedToCheckoutBtn);
 	}
 	
 	public WebElement getDeleteItemOne() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(deleteItemOne);
+		return DriverFactory.getDriver().findElement(deleteItemOne);
 	}
 	
 	public WebElement getDeleteItemTwo() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(deleteItemTwo);
+		return DriverFactory.getDriver().findElement(deleteItemTwo);
 	}
 	
 	public WebElement getTotalAmount() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(totalValue);
+		return DriverFactory.getDriver().findElement(totalValue);
 	}
 
 }

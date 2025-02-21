@@ -3,13 +3,12 @@ package pageObjects;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import base.BasePage;
+import utils.DriverFactory;
 
 public class ShopHomepage extends BasePage{
-public WebDriver driver;
 	
 	By productOne = By.linkText("Hummingbird Printed T-Shirt");
 	By productTwo = By.linkText("Hummingbird Printed Sweater");
@@ -25,43 +24,43 @@ public WebDriver driver;
 	}
 	
 	public WebElement getProdOne() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(productOne);
+
+		return DriverFactory.getDriver().findElement(productOne);
 	}
 	
 	public WebElement getProdTwo() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(productTwo);
+
+		return DriverFactory.getDriver().findElement(productTwo);
 	}
 	
 	public WebElement getProdThree() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(productThree);
+
+		return DriverFactory.getDriver().findElement(productThree);
 	}	
 	
 	public WebElement getProdFour() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(productFour);
+
+		return DriverFactory.getDriver().findElement(productFour);
 	}	
 
 	public WebElement getProdFive() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(productFive);
+
+		return DriverFactory.getDriver().findElement(productFive);
 	}	
 	
 	public WebElement getProdSix() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(productSix);
+
+		return DriverFactory.getDriver().findElement(productSix);
 	}	
 	
 	public WebElement getProdSeven() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(productSeven);
+
+		return DriverFactory.getDriver().findElement(productSeven);
 	}	
 	
 	public WebElement getProdEight() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(productEight);
+
+		return DriverFactory.getDriver().findElement(productEight);
 	}
 
 }

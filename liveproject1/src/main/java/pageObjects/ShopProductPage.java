@@ -3,14 +3,13 @@ package pageObjects;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import base.BasePage;
+import utils.DriverFactory;
 
 public class ShopProductPage extends BasePage{
-	
-	public WebDriver driver;
+
 	By sizeOption = By.cssSelector("[aria-label='Size']");
 	By quantityIncrease = By.cssSelector(".touchspin-up");
 	By quantityDecrease = By.cssSelector(".touchspin-down");
@@ -25,38 +24,38 @@ public class ShopProductPage extends BasePage{
 	}
 	
 	public WebElement getSizeOption() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(sizeOption);
+
+		return DriverFactory.getDriver().findElement(sizeOption);
 	}
 	
 	public WebElement getQuantIncrease() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(quantityIncrease);
+
+		return DriverFactory.getDriver().findElement(quantityIncrease);
 	}
 	
 	public WebElement getQuantDecrease() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(quantityDecrease);	
+
+		return DriverFactory.getDriver().findElement(quantityDecrease);	
 	}
 	
 	public WebElement getWhiteOption() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(whiteOption);	
+
+		return DriverFactory.getDriver().findElement(whiteOption);	
 	}
 	
 	public WebElement getBlackOption() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(blackOption);	
+
+		return DriverFactory.getDriver().findElement(blackOption);	
 	}
 	
 	public WebElement getAddToCartBtn() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(addToCart);	
+
+		return DriverFactory.getDriver().findElement(addToCart);	
 	}
 	
 	public WebElement getHomepageLink() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(homePage);	
+
+		return DriverFactory.getDriver().findElement(homePage);	
 	}
 	
 }

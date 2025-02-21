@@ -3,13 +3,12 @@ package pageObjects;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import base.BasePage;
+import utils.DriverFactory;
 
 public class OrderFormPayment extends BasePage{
-	public WebDriver driver;
 
 	By payByCheck = By.xpath("//span[.='Pay by Check']");
 	By payByWire = By.xpath("//span[.='Pay by bank wire']");
@@ -21,23 +20,19 @@ public class OrderFormPayment extends BasePage{
 	}
 
 	public WebElement getPayByCheckRadioBtn() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(payByCheck);
+		return DriverFactory.getDriver().findElement(payByCheck);
 	}
 
 	public WebElement getPayByWireRadioBtn() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(payByWire);
+		return DriverFactory.getDriver().findElement(payByWire);
 	}
 
 	public WebElement getTermsConditionsCheckbox() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(termsAndConditions);
+		return DriverFactory.getDriver().findElement(termsAndConditions);
 	}
 
 	public WebElement getOrderBtn() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(orderBtn);
+		return DriverFactory.getDriver().findElement(orderBtn);
 	}
 
 }

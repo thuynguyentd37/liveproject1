@@ -3,30 +3,29 @@ package pageObjects;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import base.BasePage;
+import utils.DriverFactory;
 
 public class ShopContentPanel extends BasePage {
 
-	public WebDriver driver;
 
 	By continueShoppingBtn = By.xpath("//button[contains(text(), 'Continue')]");
 	By checkoutBtn = By.xpath("//*[text()='Proceed to checkout']");
 
 	public ShopContentPanel() throws IOException {
-		this.driver = getDriver();
+
 	}
 
 	public WebElement getContinueShopBtn() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(continueShoppingBtn);
+
+		return DriverFactory.getDriver().findElement(continueShoppingBtn);
 	}
 
 	public WebElement getCheckoutBtn() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(checkoutBtn);
+
+		return DriverFactory.getDriver().findElement(checkoutBtn);
 	}
 
 }
