@@ -8,8 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 import java.time.Duration;
-
-import static base.BasePage.getDriver;
+import static utils.DriverFactory.getDriver;
 
 public class SeleniumHelper {
 

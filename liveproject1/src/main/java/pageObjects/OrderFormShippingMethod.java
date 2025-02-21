@@ -3,13 +3,12 @@ package pageObjects;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import base.BasePage;
+import utils.DriverFactory;
 
 public class OrderFormShippingMethod extends BasePage{
-	public WebDriver driver;
 
 	By deliveryMsgTextbox = By.cssSelector("textarea#delivery_message");
 	By continueBtn = By.cssSelector("[name='confirmDeliveryOption']");
@@ -19,13 +18,11 @@ public class OrderFormShippingMethod extends BasePage{
 	}
 	
 	public WebElement getDeliveryMsgTextbox() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(deliveryMsgTextbox);
+		return DriverFactory.getDriver().findElement(deliveryMsgTextbox);
 	}
 
 	public WebElement getContinueBtn() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(continueBtn);
+		return DriverFactory.getDriver().findElement(continueBtn);
 	}
 
 }

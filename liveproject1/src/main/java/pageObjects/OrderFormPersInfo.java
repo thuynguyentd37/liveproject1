@@ -3,13 +3,11 @@ package pageObjects;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import base.BasePage;
+import utils.DriverFactory;
 
 public class OrderFormPersInfo extends BasePage{
-	public WebDriver driver;
 	
 	By genderMr = By.cssSelector("label:nth-of-type(1) > .custom-radio > input[name='id_gender']");
 	By genderMrs = By.cssSelector("label:nth-of-type(2) > .custom-radio > input[name='id_gender']");
@@ -29,58 +27,58 @@ public class OrderFormPersInfo extends BasePage{
 	}
 	
 	public WebElement getGenderMr() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(genderMr);
+
+		return DriverFactory.getDriver().findElement(genderMr);
 	}
 
 	public WebElement getGenderMrs() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(genderMrs);
+
+		return DriverFactory.getDriver().findElement(genderMrs);
 	}
 
 	public WebElement getFirstNameField() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(firstNameField);
+
+		return DriverFactory.getDriver().findElement(firstNameField);
 	}
 	
-	public WebElement getLastnameField() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(lastNameField);
+	public WebElement getLastNameField() throws IOException {
+
+		return DriverFactory.getDriver().findElement(lastNameField);
 	}
 
 	public WebElement getEmailField() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(emailField);
+
+		return DriverFactory.getDriver().findElement(emailField);
 	}
 	
 	public WebElement getPasswordField() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(passwordField);
+
+		return DriverFactory.getDriver().findElement(passwordField);
 	}
 	
 	public WebElement getBirthDateField() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(birthDateField);
+
+		return DriverFactory.getDriver().findElement(birthDateField);
 	}
 	
 	public WebElement getRecOfferCheckbox() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(receiveOffersCheckbox);
+
+		return DriverFactory.getDriver().findElement(receiveOffersCheckbox);
 	}
 	
 	public WebElement getNewsletterCheckbox() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(newsletterCheckbox);
+
+		return DriverFactory.getDriver().findElement(newsletterCheckbox);
 	}
 	
 	public WebElement getTermsConditionsCheckbox() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(termsConditionsCheckbox);
+
+		return DriverFactory.getDriver().findElement(termsConditionsCheckbox);
 	}
 	
 	public WebElement getContinueBtn() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(continueBtn);
+
+		return DriverFactory.getDriver().findElement(continueBtn);
 	}
 
 

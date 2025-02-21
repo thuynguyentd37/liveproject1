@@ -1,21 +1,20 @@
 package base;
 
 import java.io.IOException;
-import drivers.DriverFactory;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import utils.DriverFactory;
 
 public class Hooks extends BasePage {
 
 	public Hooks() throws IOException {
-		super();
+		//super();
 		// TODO Auto-generated constructor stub
 	}
 
 	@BeforeTest(alwaysRun=true)
 	public void setup() throws IOException {
-		getDriver().get(getUrl());
-
+		DriverFactory.getDriver().get(getUrl());
 	}
 	
 	

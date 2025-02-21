@@ -3,13 +3,12 @@ package pageObjects;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import base.BasePage;
+import utils.DriverFactory;
 
 public class OrderFormDelivery extends BasePage{
-	public WebDriver driver;
 
 	By firstNameField = By.cssSelector("input[name='firstname']");
 	By lastNameField = By.cssSelector("input[name='lastname']");
@@ -29,63 +28,63 @@ public class OrderFormDelivery extends BasePage{
 	}
 
 	public WebElement getFirstNameField() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(firstNameField);
+
+		return DriverFactory.getDriver().findElement(firstNameField);
 	}
 
 	public WebElement getLastnameField() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(lastNameField);
+
+		return DriverFactory.getDriver().findElement(lastNameField);
 	}
 
 	public WebElement getCompanyField() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(companyNameField);
+
+		return DriverFactory.getDriver().findElement(companyNameField);
 	}
 
 	public WebElement getAddressField() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(addressField);
+
+		return DriverFactory.getDriver().findElement(addressField);
 	}
 
 	public WebElement getAddressCompField() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(addressComplementField);
+
+		return DriverFactory.getDriver().findElement(addressComplementField);
 	}
 
 	public WebElement getCityField() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(cityField);
+
+		return DriverFactory.getDriver().findElement(cityField);
 	}
 
 	public WebElement getStateDropdown() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(stateDropdown);
+
+		return DriverFactory.getDriver().findElement(stateDropdown);
 	}
 
 	public WebElement getPostcodeField() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(postcodeField);
+
+		return DriverFactory.getDriver().findElement(postcodeField);
 	}
 
 	public WebElement getCountryDropdown() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(countryDropdown);
+
+		return DriverFactory.getDriver().findElement(countryDropdown);
 	}
 
 	public WebElement getPhoneField() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(phoneField);
+
+		return DriverFactory.getDriver().findElement(phoneField);
 	}
 
 	public WebElement getInvoiceSameAddCheckbox() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(invoiceSameAddCheckboc);
+
+		return DriverFactory.getDriver().findElement(invoiceSameAddCheckboc);
 	}
 
 	public WebElement getContinueBtn() throws IOException {
-		this.driver = getDriver();
-		return driver.findElement(continueBtn);
+
+		return DriverFactory.getDriver().findElement(continueBtn);
 	}
 
 }

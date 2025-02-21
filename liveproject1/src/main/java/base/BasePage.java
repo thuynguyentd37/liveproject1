@@ -1,25 +1,21 @@
 package base;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import utils.DriverFactory;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import drivers.DriverFactory;
 
 public class BasePage {
 
     // Declare instance variables
+
 	private String url;
 	private Properties prop;
 	public static String screenShotDestinationPath;
@@ -39,10 +35,9 @@ public class BasePage {
 	}
 
 	// Method to get WebDriver instance
-	public static WebDriver getDriver() throws IOException {
-		//return WebDriverInstance.getDriver();
+	/*public static WebDriver getDriver() throws IOException {
 		return DriverFactory.getDriver();
-	}
+	}*/
 
 	// Method to get URL from properties file
 	public String getUrl() throws IOException {
@@ -53,7 +48,7 @@ public class BasePage {
 
 	// Method to take a screenshot with a given name
 	public static String takeSnapShot(String name) throws IOException {
-		File srcFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
+		File srcFile = ((TakesScreenshot) DriverFactory.getDriver()).getScreenshotAs(OutputType.FILE);
 
 		String destFile = System.getProperty("user.dir")
 				+ File.separator + "target"
@@ -80,13 +75,5 @@ public class BasePage {
 		return screenShotDestinationPath;
 	}
 	
-	public static void waitForElementInvisible(WebElement element, int timer) throws IOException {
-		WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(timer));
-		wait.until(ExpectedConditions.invisibilityOf(element));
-	}
 
-	public static void waitForElementToBeClickable(WebElement element, int timer) throws IOException {
-		WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(timer));
-		wait.until(ExpectedConditions.elementToBeClickable(element));
-	}
 }
