@@ -1,15 +1,19 @@
-C:\Users\thn1\Desktop\Selenium Automation\04 - Maven Hybrid Framework\Workspace\liveproject1\src\main\java\pageObjects\ShopHomepage.java
-C:\Users\thn1\Desktop\Selenium Automation\04 - Maven Hybrid Framework\Workspace\liveproject1\src\main\java\resources\Listeners.java
-C:\Users\thn1\Desktop\Selenium Automation\04 - Maven Hybrid Framework\Workspace\liveproject1\src\main\java\base\Hooks.java
-C:\Users\thn1\Desktop\Selenium Automation\04 - Maven Hybrid Framework\Workspace\liveproject1\src\main\java\pageObjects\OrderFormDelivery.java
-C:\Users\thn1\Desktop\Selenium Automation\04 - Maven Hybrid Framework\Workspace\liveproject1\src\main\java\uk\co\automationtesting\liveproject1\App.java
-C:\Users\thn1\Desktop\Selenium Automation\04 - Maven Hybrid Framework\Workspace\liveproject1\src\main\java\base\WebDriverInstance.java
-C:\Users\thn1\Desktop\Selenium Automation\04 - Maven Hybrid Framework\Workspace\liveproject1\src\main\java\pageObjects\OrderFormPayment.java
-C:\Users\thn1\Desktop\Selenium Automation\04 - Maven Hybrid Framework\Workspace\liveproject1\src\main\java\pageObjects\OrderFormPersInfo.java
-C:\Users\thn1\Desktop\Selenium Automation\04 - Maven Hybrid Framework\Workspace\liveproject1\src\main\java\pageObjects\ShoppingCart.java
-C:\Users\thn1\Desktop\Selenium Automation\04 - Maven Hybrid Framework\Workspace\liveproject1\src\main\java\pageObjects\OrderFormShippingMethod.java
-C:\Users\thn1\Desktop\Selenium Automation\04 - Maven Hybrid Framework\Workspace\liveproject1\src\main\java\pageObjects\ShopProductPage.java
-C:\Users\thn1\Desktop\Selenium Automation\04 - Maven Hybrid Framework\Workspace\liveproject1\src\main\java\base\ExtentManager.java
-C:\Users\thn1\Desktop\Selenium Automation\04 - Maven Hybrid Framework\Workspace\liveproject1\src\main\java\pageObjects\Homepage.java
-C:\Users\thn1\Desktop\Selenium Automation\04 - Maven Hybrid Framework\Workspace\liveproject1\src\main\java\base\BasePage.java
-C:\Users\thn1\Desktop\Selenium Automation\04 - Maven Hybrid Framework\Workspace\liveproject1\src\main\java\pageObjects\ShopContentPanel.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/pageObjects/ShopHomepage.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/pageObjects/ShoppingCart.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/pageObjects/OrderFormPayment.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/base/BasePage.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/resources/Retry.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/base/Hooks.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/utils/PropertyUtils.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/base/ExtentManager.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/utils/WebDriverHelper.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/pageObjects/OrderFormDelivery.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/pageObjects/OrderFormShippingMethod.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/pageObjects/ShopProductPage.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/pageObjects/Homepage.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/resources/Listeners.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/pageObjects/OrderFormPersInfo.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/utils/DriverFactory.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/base/SeleniumHelper.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/pageObjects/ShopContentPanel.java
+/Users/nguyentrongtin/Desktop/Thuy's Github/liveproject1/liveproject1/src/main/java/uk/co/automationtesting/liveproject1/App.java

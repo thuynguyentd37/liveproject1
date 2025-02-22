@@ -2,35 +2,33 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-02T11:30:54 ICT" name="Suite" finished-at="2024-09-02T11:31:13 ICT" duration-ms="19624">
+  <suite started-at="2025-02-22T10:55:30 GMT+07:00" name="Suite" finished-at="2025-02-22T10:56:11 GMT+07:00" duration-ms="40943">
     <groups>
       <group name="regression">
-        <method signature="OrderCompleteTest.endToEndTest()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@6392827e]" name="endToEndTest" class="uk.co.automationtesting.liveproject1.OrderCompleteTest"/>
-        <method signature="AddRemoveItemBasketTest.addRemoveItem()[pri:0, instance:uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest@6fdbe764]" name="addRemoveItem" class="uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest"/>
+        <method signature="OrderCompleteTest.endToEndTest()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@3a93b025]" name="endToEndTest" class="uk.co.automationtesting.liveproject1.OrderCompleteTest"/>
+        <method signature="AddRemoveItemBasketTest.addRemoveItem()[pri:0, instance:uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest@14cd1699]" name="addRemoveItem" class="uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="OrderCompleteTest.endToEndTest()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@6392827e]" name="endToEndTest" class="uk.co.automationtesting.liveproject1.OrderCompleteTest"/>
+        <method signature="OrderCompleteTest.endToEndTest()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@3a93b025]" name="endToEndTest" class="uk.co.automationtesting.liveproject1.OrderCompleteTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-09-02T11:30:54 ICT" name="TestOrderComplete" finished-at="2024-09-02T11:31:11 ICT" duration-ms="17085">
+    <test started-at="2025-02-22T10:55:30 GMT+07:00" name="TestOrderComplete" finished-at="2025-02-22T10:55:53 GMT+07:00" duration-ms="22762">
       <class name="uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest@6fdbe764]" started-at="2024-09-02T11:30:54 ICT" name="setup" finished-at="2024-09-02T11:30:57 ICT" duration-ms="3453" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest@14cd1699]" started-at="2025-02-22T10:55:30 GMT+07:00" name="setup" finished-at="2025-02-22T10:55:36 GMT+07:00" duration-ms="6058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addRemoveItem()[pri:0, instance:uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest@6fdbe764]" started-at="2024-09-02T11:30:57 ICT" name="addRemoveItem" finished-at="2024-09-02T11:31:10 ICT" duration-ms="12978" status="FAIL">
+        <test-method signature="addRemoveItem()[pri:0, instance:uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest@14cd1699]" started-at="2025-02-22T10:55:37 GMT+07:00" name="addRemoveItem" finished-at="2025-02-22T10:55:52 GMT+07:00" duration-ms="15824" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cart amount did not match the expected amount, it found$45.24 expected $45.23]]>
+              <![CDATA[Cart amount did not match the expected amount, it found: $45.24 expected $45.23]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Cart amount did not match the expected amount, it found$45.24 expected $45.23
+              <![CDATA[java.lang.AssertionError: Cart amount did not match the expected amount, it found: $45.24 expected $45.23
 at org.testng.Assert.fail(Assert.java:111)
-at uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest.addRemoveItem(AddRemoveItemBasketTest.java:84)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest.addRemoveItem(AddRemoveItemBasketTest.java:95)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
@@ -39,39 +37,39 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
 at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addRemoveItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest@6fdbe764]" started-at="2024-09-02T11:31:10 ICT" name="tearDown" finished-at="2024-09-02T11:31:11 ICT" duration-ms="370" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest@14cd1699]" started-at="2025-02-22T10:55:53 GMT+07:00" name="tearDown" finished-at="2025-02-22T10:55:53 GMT+07:00" duration-ms="148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest -->
     </test> <!-- TestOrderComplete -->
-    <test started-at="2024-09-02T11:30:54 ICT" name="TestAddRemoveItemBasket" finished-at="2024-09-02T11:31:13 ICT" duration-ms="19624">
+    <test started-at="2025-02-22T10:55:30 GMT+07:00" name="TestAddRemoveItemBasket" finished-at="2025-02-22T10:56:11 GMT+07:00" duration-ms="40943">
       <class name="uk.co.automationtesting.liveproject1.OrderCompleteTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@6392827e]" started-at="2024-09-02T11:30:54 ICT" name="setup" finished-at="2024-09-02T11:30:57 ICT" duration-ms="3374" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@3a93b025]" started-at="2025-02-22T10:55:30 GMT+07:00" name="setup" finished-at="2025-02-22T10:55:36 GMT+07:00" duration-ms="6053" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="endToEndTest()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@6392827e]" started-at="2024-09-02T11:30:57 ICT" name="endToEndTest" finished-at="2024-09-02T11:31:13 ICT" duration-ms="15935" status="PASS">
+        <test-method signature="endToEndTest()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@3a93b025]" started-at="2025-02-22T10:55:37 GMT+07:00" name="endToEndTest" finished-at="2025-02-22T10:56:11 GMT+07:00" duration-ms="34494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endToEndTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@6392827e]" started-at="2024-09-02T11:31:13 ICT" name="tearDown" finished-at="2024-09-02T11:31:13 ICT" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@3a93b025]" started-at="2025-02-22T10:56:11 GMT+07:00" name="tearDown" finished-at="2025-02-22T10:56:11 GMT+07:00" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
