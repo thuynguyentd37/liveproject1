@@ -1,22 +1,17 @@
 package utils;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class DriverFactory {
@@ -35,9 +30,9 @@ public class DriverFactory {
     }
 
     private static WebDriver createDriver() {
-        String browser = System.getProperty("browser", PropertyUtils.getProperty("browser")).toLowerCase();
-        String runMode = System.getProperty("runMode", PropertyUtils.getProperty("runMode")).toLowerCase();
-        boolean headless = Boolean.parseBoolean(System.getProperty("headless", PropertyUtils.getProperty("headless")));
+        String browser = PropertyUtils.getProperty("browser");
+        String runMode = PropertyUtils.getProperty("runMode");
+        boolean headless = Boolean.parseBoolean(PropertyUtils.getProperty("headless"));
 
         WebDriver driverInstance;
 

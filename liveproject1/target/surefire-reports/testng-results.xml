@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-22T10:55:30 GMT+07:00" name="Suite" finished-at="2025-02-22T10:56:11 GMT+07:00" duration-ms="40943">
+  <suite started-at="2025-02-22T11:12:55 GMT+07:00" name="Suite" finished-at="2025-02-22T11:13:36 GMT+07:00" duration-ms="40085">
     <groups>
       <group name="regression">
         <method signature="OrderCompleteTest.endToEndTest()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@3a93b025]" name="endToEndTest" class="uk.co.automationtesting.liveproject1.OrderCompleteTest"/>
@@ -12,13 +12,13 @@
         <method signature="OrderCompleteTest.endToEndTest()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@3a93b025]" name="endToEndTest" class="uk.co.automationtesting.liveproject1.OrderCompleteTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-02-22T10:55:30 GMT+07:00" name="TestOrderComplete" finished-at="2025-02-22T10:55:53 GMT+07:00" duration-ms="22762">
+    <test started-at="2025-02-22T11:12:55 GMT+07:00" name="TestOrderComplete" finished-at="2025-02-22T11:13:17 GMT+07:00" duration-ms="21671">
       <class name="uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest@14cd1699]" started-at="2025-02-22T10:55:30 GMT+07:00" name="setup" finished-at="2025-02-22T10:55:36 GMT+07:00" duration-ms="6058" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest@14cd1699]" started-at="2025-02-22T11:12:56 GMT+07:00" name="setup" finished-at="2025-02-22T11:13:01 GMT+07:00" duration-ms="5086" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addRemoveItem()[pri:0, instance:uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest@14cd1699]" started-at="2025-02-22T10:55:37 GMT+07:00" name="addRemoveItem" finished-at="2025-02-22T10:55:52 GMT+07:00" duration-ms="15824" status="FAIL">
+        <test-method signature="addRemoveItem()[pri:0, instance:uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest@14cd1699]" started-at="2025-02-22T11:13:01 GMT+07:00" name="addRemoveItem" finished-at="2025-02-22T11:13:17 GMT+07:00" duration-ms="15831" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Cart amount did not match the expected amount, it found: $45.24 expected $45.23]]>
@@ -53,23 +53,23 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addRemoveItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest@14cd1699]" started-at="2025-02-22T10:55:53 GMT+07:00" name="tearDown" finished-at="2025-02-22T10:55:53 GMT+07:00" duration-ms="148" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest@14cd1699]" started-at="2025-02-22T11:13:17 GMT+07:00" name="tearDown" finished-at="2025-02-22T11:13:17 GMT+07:00" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest -->
     </test> <!-- TestOrderComplete -->
-    <test started-at="2025-02-22T10:55:30 GMT+07:00" name="TestAddRemoveItemBasket" finished-at="2025-02-22T10:56:11 GMT+07:00" duration-ms="40943">
+    <test started-at="2025-02-22T11:12:55 GMT+07:00" name="TestAddRemoveItemBasket" finished-at="2025-02-22T11:13:36 GMT+07:00" duration-ms="40085">
       <class name="uk.co.automationtesting.liveproject1.OrderCompleteTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@3a93b025]" started-at="2025-02-22T10:55:30 GMT+07:00" name="setup" finished-at="2025-02-22T10:55:36 GMT+07:00" duration-ms="6053" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@3a93b025]" started-at="2025-02-22T11:12:56 GMT+07:00" name="setup" finished-at="2025-02-22T11:13:01 GMT+07:00" duration-ms="5107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="endToEndTest()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@3a93b025]" started-at="2025-02-22T10:55:37 GMT+07:00" name="endToEndTest" finished-at="2025-02-22T10:56:11 GMT+07:00" duration-ms="34494" status="PASS">
+        <test-method signature="endToEndTest()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@3a93b025]" started-at="2025-02-22T11:13:01 GMT+07:00" name="endToEndTest" finished-at="2025-02-22T11:13:35 GMT+07:00" duration-ms="34633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endToEndTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@3a93b025]" started-at="2025-02-22T10:56:11 GMT+07:00" name="tearDown" finished-at="2025-02-22T10:56:11 GMT+07:00" duration-ms="123" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:uk.co.automationtesting.liveproject1.OrderCompleteTest@3a93b025]" started-at="2025-02-22T11:13:35 GMT+07:00" name="tearDown" finished-at="2025-02-22T11:13:36 GMT+07:00" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
