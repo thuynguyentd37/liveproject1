@@ -1,0 +1,22 @@
+# Ignore Maven target folder
+target/
+
+# Ignore Surefire and TestNG reports
+surefire-reports/
+test-output/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temp files
+*.log
+*.dumpstream
+*.pstream
+
+# Ignore IntelliJ and VS Code settings
+.idea/
+.vscode/
+
+# Ignore report folder
+report/

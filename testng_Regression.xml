@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+	<test thread-count="5" name="TestAddRemoveItemBasket">
+		<classes>
+			<class name="uk.co.automationtesting.liveproject1.OrderCompleteTest" />
+		</classes>
+	</test> <!--
+	Test -->
+
+	<test thread-count="5" name="TestOrderComplete">
+		<classes>
+			<class name="uk.co.automationtesting.liveproject1.AddRemoveItemBasketTest" />
+		</classes>
+	</test> <!--
+	Test -->
+	
+</suite> <!--
+Suite -->
