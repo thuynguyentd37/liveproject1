@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/thuynguyentd37/liveproject1.gitt'
+                git 'https://github.com/thuynguyentd37/liveproject1.git'
             }
         }
 
