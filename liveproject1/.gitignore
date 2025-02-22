@@ -20,3 +20,6 @@ Thumbs.db
 
 # Ignore report folder
 report/
+
+# Ignore IntelliJ file
+.idea
