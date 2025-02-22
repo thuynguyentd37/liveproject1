@@ -17,3 +17,6 @@ Thumbs.db
 # Ignore IntelliJ and VS Code settings
 .idea/
 .vscode/
+
+# Ignore report folder
+report/
