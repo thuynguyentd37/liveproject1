@@ -65,7 +65,7 @@ public class AddRemoveItemBasketTest extends Hooks {
 		//helper.clickElementByXPath("//*[text()='Proceed to checkout']");
 		Thread.sleep(3000);
 		WebElement checkoutBtn = cPanel.getCheckoutBtn();
-		waitForElementToBeClickable(checkoutBtn,5);
+		helper.waitForElementToBeClickable(checkoutBtn,5);
 		helper.clickElement(checkoutBtn);
 
 		// creating an object for the shopping cart page and deleting item 2
@@ -73,7 +73,7 @@ public class AddRemoveItemBasketTest extends Hooks {
 		helper.clickElement(cart.getDeleteItemTwo());
 
 		// using a wait to ensure the deletion has taken place
-		waitForElementInvisible(cart.getDeleteItemTwo(), 10);
+		helper.waitForElementInvisible(cart.getDeleteItemTwo(), 10);
 
 		// printing the total amount to console
 		System.out.println(cart.getTotalAmount().getText());
