@@ -1,6 +1,10 @@
 pipeline {
     agent any  // Runs on any available Jenkins agent
 
+    tools {
+        maven 'Maven_3'
+    }
+
     environment {
         MAVEN_OPTS = "-Xmx2G" // Set Maven memory limit
     }
